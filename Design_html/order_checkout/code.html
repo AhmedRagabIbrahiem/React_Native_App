@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#d2c4b2",
+                    "background": "#faf9f6",
+                    "surface-container-high": "#e9e8e5",
+                    "on-secondary-fixed": "#221a0f",
+                    "secondary-fixed": "#efe0cd",
+                    "tertiary-fixed-dim": "#a1d494",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#59422c",
+                    "on-tertiary-fixed-variant": "#23501e",
+                    "tertiary-fixed": "#bcf0ae",
+                    "on-surface-variant": "#4e453d",
+                    "on-primary-fixed": "#291806",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f4f3f1",
+                    "on-background": "#1a1c1a",
+                    "surface-bright": "#faf9f6",
+                    "primary-container": "#4b3621",
+                    "inverse-surface": "#2f312f",
+                    "outline": "#80756c",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#6d6354",
+                    "on-tertiary-fixed": "#002201",
+                    "on-surface": "#1a1c1a",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-container": "#7fb174",
+                    "primary-fixed": "#fedcbe",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e3e2e0",
+                    "primary": "#33210d",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#bd9f83",
+                    "surface-tint": "#725a42",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "tertiary": "#002c02",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#efe0cd",
+                    "secondary": "#675d4e",
+                    "inverse-primary": "#e1c1a4",
+                    "surface-variant": "#e3e2e0",
+                    "surface-container": "#efeeeb",
+                    "tertiary-container": "#164313",
+                    "outline-variant": "#d2c4ba",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#4f4538",
+                    "inverse-on-surface": "#f2f1ee",
+                    "surface": "#faf9f6",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "label-sm": ["DM Sans"],
+                    "body-md": ["DM Sans"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["DM Sans"],
+                    "label-md": ["DM Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .dotted-leader {
+        border-bottom: 2px dotted #80756c;
+        flex-grow: 1;
+        margin: 0 8px 4px 8px;
+        opacity: 0.3;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-background dark:bg-background">
+<div class="flex items-center justify-between px-margin-mobile py-unit w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="coffee">coffee</span>
+<h1 class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Digital Hospitality</h1>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 transition-opacity active:scale-95" data-icon="close">close</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Order Summary -->
+<div class="lg:col-span-7 space-y-gutter">
+<section>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Review Your Order</h2>
+<div class="space-y-4">
+<!-- Order Item 1 -->
+<div class="bg-secondary-container/30 rounded-xl p-4 flex gap-4 items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A professional close-up of a creamy Oat Milk Latte with intricate leaf latte art on top. The ceramic cup sits on a rustic wooden table in a sunlit, high-end cafe environment. The aesthetic is warm, inviting, and minimalist, utilizing a soft depth of field and natural golden lighting to emphasize the texture of the milk foam." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLZvAuyvPOsbjpeKPb9P5VokT5Lr6ae7-766PtJo89KIVKgwWxclVlECkVymIVzd_SBD82jWdFzb9CJYB1PW8DU49NYgcS1WmCLQOuiRO_fwS5DprHKLb9bTbapmC8dmWo2uErZ1yDzgvWbegA-98V8vR3e_s4VEXUGks6NcSEhMOfGINewi_slMDg_hTTmsuXt4XSFvavGz35IZvhglXp33Wg_jSOYPqXMq0XE18x2IJOEQnrDr8u6QmAyL4Bx6KR2pOFzjZeZ9r2"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md text-primary">Oat Milk Latte</h3>
+<p class="font-label-md text-label-md text-primary">$5.50</p>
+</div>
+<p class="text-on-surface-variant text-label-md">Large • Extra Hot</p>
+</div>
+</div>
+<!-- Order Item 2 -->
+<div class="bg-secondary-container/30 rounded-xl p-4 flex gap-4 items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A golden-brown, flaky Almond Croissant dusted with powdered sugar and topped with toasted almond slices. The pastry is presented on a clean, cream-colored ceramic plate. The lighting is soft and bright, highlighting the delicate layers of the pastry in a modern, boutique cafe setting with a warm, sophisticated atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhwiDIzcPKvyJXHNA-i6A89ON0T0jTYBRG5OWcZE3arGSFK11SemfFtI5dilphs8AABIoDdCCpzSJLdj7LBd1wM695WBmcxt59JP3K3F_M1tMaUzLbjd9NPR5yE6lomV4dktBicMyuxoiVD6d5J9zFHYmHSP5bD8jHMXv0Bqi8Te486d95jlHSNqLUdScyTqJU_pdjBFiZ8CU5t2Ece7sGlKuE7g7sUmUe4W-USib-C09lZws79AAJ72UdBlQl2EwIn5DcXDYQa_jA"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md text-primary">Almond Croissant</h3>
+<p class="font-label-md text-label-md text-primary">$4.75</p>
+</div>
+<p class="text-on-surface-variant text-label-md">Freshly baked</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Method Selection -->
+<section class="bg-surface-container-low rounded-xl p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Service Method</h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Option: Pickup -->
+<label class="relative flex flex-col items-center justify-center p-6 border-2 border-primary bg-secondary-container rounded-xl cursor-pointer transition-all duration-200">
+<input checked="" class="hidden" name="service_method" type="radio"/>
+<span class="material-symbols-outlined text-primary mb-2" data-icon="local_mall">local_mall</span>
+<span class="font-label-md text-label-md text-primary">Pickup</span>
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle" data-weight="fill">check_circle</span>
+</div>
+</label>
+<!-- Option: Dine-in -->
+<label class="relative flex flex-col items-center justify-center p-6 border-2 border-transparent bg-surface-container-high rounded-xl cursor-pointer hover:bg-secondary-container/50 transition-all duration-200">
+<input class="hidden" name="service_method" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant mb-2" data-icon="restaurant">restaurant</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Dine-in</span>
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: Payment Details -->
+<div class="lg:col-span-5">
+<div class="bg-white rounded-2xl p-8 shadow-[0_4px_24px_rgba(75,54,33,0.06)] lg:sticky lg:top-24">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Payment Summary</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-end">
+<span class="font-body-md text-on-surface-variant">Subtotal</span>
+<div class="dotted-leader"></div>
+<span class="font-label-md text-primary">$10.25</span>
+</div>
+<div class="flex items-end">
+<span class="font-body-md text-on-surface-variant">Tax</span>
+<div class="dotted-leader"></div>
+<span class="font-label-md text-primary">$0.82</span>
+</div>
+<div class="flex items-end mt-4 pt-4 border-t border-outline-variant">
+<span class="font-headline-md text-primary">Total</span>
+<div class="dotted-leader"></div>
+<span class="font-headline-md text-primary">$11.07</span>
+</div>
+</div>
+<!-- Payment Method (Simplified for UI focus) -->
+<div class="mb-8">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-3">Payment Method</p>
+<div class="flex items-center gap-4 p-4 border border-outline-variant rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="credit_card">credit_card</span>
+<div class="flex-grow">
+<p class="font-label-md text-primary">•••• 4242</p>
+<p class="text-xs text-on-surface-variant">Expires 12/25</p>
+</div>
+<button class="text-tertiary-container font-label-sm hover:underline">Change</button>
+</div>
+</div>
+<!-- CTA Button -->
+<button class="w-full bg-primary-container text-on-primary py-4 rounded-full font-label-md text-label-md shadow-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2">
+<span>Place Order</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-on-surface-variant mt-4 px-4">
+                        By placing your order, you agree to our Digital Hospitality terms of service and privacy policy.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-low dark:bg-surface-container-low shadow-[0_-4px_12px_rgba(75,54,33,0.08)] z-50 rounded-t-xl md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high rounded-full transition-colors active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high rounded-full transition-colors active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart" data-weight="fill">shopping_cart</span>
+<span class="font-label-sm text-label-sm">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high rounded-full transition-colors active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+</body></html>

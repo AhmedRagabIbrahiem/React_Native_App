@@ -1,0 +1,28 @@
+services:
+  api:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  app:
+    build: .
+    ports:
+      - "8081:8081"
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - EXPO_PUBLIC_API_URL=http://localhost:3000
+      - CI=0
+    depends_on:
+      - api
+    stdin_open: true
+    tty: true

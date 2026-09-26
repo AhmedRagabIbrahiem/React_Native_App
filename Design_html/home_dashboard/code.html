@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital Hospitality - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#d2c4b2",
+                    "background": "#faf9f6",
+                    "surface-container-high": "#e9e8e5",
+                    "on-secondary-fixed": "#221a0f",
+                    "secondary-fixed": "#efe0cd",
+                    "tertiary-fixed-dim": "#a1d494",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#59422c",
+                    "on-tertiary-fixed-variant": "#23501e",
+                    "tertiary-fixed": "#bcf0ae",
+                    "on-surface-variant": "#4e453d",
+                    "on-primary-fixed": "#291806",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f4f3f1",
+                    "on-background": "#1a1c1a",
+                    "surface-bright": "#faf9f6",
+                    "primary-container": "#4b3621",
+                    "inverse-surface": "#2f312f",
+                    "outline": "#80756c",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#6d6354",
+                    "on-tertiary-fixed": "#002201",
+                    "on-surface": "#1a1c1a",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-container": "#7fb174",
+                    "primary-fixed": "#fedcbe",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e3e2e0",
+                    "primary": "#33210d",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#bd9f83",
+                    "surface-tint": "#725a42",
+                    "primary-fixed-dim": "#e1c1a4",
+                    "tertiary": "#002c02",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#efe0cd",
+                    "secondary": "#675d4e",
+                    "inverse-primary": "#e1c1a4",
+                    "surface-variant": "#e3e2e0",
+                    "surface-container": "#efeeeb",
+                    "tertiary-container": "#164313",
+                    "outline-variant": "#d2c4ba",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#4f4538",
+                    "inverse-on-surface": "#f2f1ee",
+                    "surface": "#faf9f6",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "label-sm": ["DM Sans"],
+                    "body-md": ["DM Sans"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["DM Sans"],
+                    "label-md": ["DM Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .dotted-leader {
+        border-bottom: 2px dotted #80756c;
+        flex-grow: 1;
+        margin: 0 8px;
+        position: relative;
+        top: -4px;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased mb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-background dark:bg-background">
+<div class="flex items-center justify-between px-margin-mobile py-unit w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-2 hover:opacity-80 transition-opacity active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="coffee">coffee</span>
+<span class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Digital Hospitality</span>
+</div>
+<button class="p-2 text-on-surface-variant hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<!-- Hero Section -->
+<section class="relative overflow-hidden rounded-xl mb-10 h-[400px] flex items-center bg-secondary-container">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30" data-alt="A warm and inviting interior of a high-end boutique cafe during the morning hours. Sunlight streams through large windows, illuminating a minimalist wooden counter and ceramic coffee cups. The atmosphere is serene and sophisticated, with a color palette of parchment, latte, and deep espresso tones. The lighting is soft and natural, creating a tactile and welcoming environment for urban professionals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbuOHaA41sAOMs2g2kWNLyFVew1u08odNA_RCaO2fJvH03rkITk0nFmi4lVs9dTFipEZgK_x587DLzmv-c64QCA4Mq1dwC1fWlEWjKJwiGWmim0PLcygb6xmQkVUEGs0VKxedFZ1Dz5wiWduuRVqgNRuUWoOT7ffcqLxTFarLg0PBdlOuRnDbRlIZXjudH40Fp7A09pArOOWUOIaEJN81hYePUCynPYH5o6TvwyP2tbh267xBule1V8y4PVaiVyYbvaZ27IAfQHyLD"/>
+</div>
+<div class="relative z-10 px-8 md:px-12 max-w-2xl">
+<span class="font-label-md text-label-md text-primary mb-2 block tracking-widest uppercase">Welcome back</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Good morning!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-md">Your favorite brew is ready and waiting. Start your day with a moment of calm.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-3 rounded-full font-label-md hover:shadow-lg transition-all active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="event_seat">event_seat</span>
+                        Reserve a Table
+                    </button>
+<button class="border border-primary text-primary px-8 py-3 rounded-full font-label-md hover:bg-secondary-container transition-all active:scale-95">
+                        View Menu
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Items (Horizontal Scroll) -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-md text-headline-md text-primary">Featured Selection</h2>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Explore All</a>
+</div>
+<div class="flex overflow-x-auto gap-gutter pb-4 no-scrollbar -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0">
+<!-- Coffee Card -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="bg-secondary-container rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02]">
+<img class="w-full h-56 object-cover" data-alt="A close-up of a perfectly crafted latte in a minimalist ceramic cup, featuring intricate latte art of a rosette. The cup sits on a tactile wooden table in a brightly lit, modern cafe setting. The color palette emphasizes warm latte tones and deep espresso browns, evoking a high-end digital hospitality experience. The lighting is focused and soft, highlighting the creamy texture of the foam." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyV1K4bePTRI8cLAY3SG3dbe7IR3fO7ZY35a3ooCExZZr9K45OVSWYQXWWC_ERgRMaDkzNkdjBFFfqCHpmgufxOoh_iQeYVmw7gVIwmagONhWU1GkOwqD_SA0t6XvWaaL06j6cPuBsKhT1C6jAKBa2BBNfB6sweTKq2_gXQPHPlXocXJ0ptbkfYqWu2GXrbpovBaYb5Pwc2wikmgipjMX2XQhsOlOto9n6LRaj52GNvWuCorhrREFH8pF9f6eVm_-UpckgD6AOERCc"/>
+</div>
+<div class="flex items-center">
+<span class="font-headline-md text-label-md text-primary">Signature Latte</span>
+<div class="dotted-leader"></div>
+<span class="font-label-md text-label-md text-primary">$5.50</span>
+</div>
+<p class="text-on-surface-variant text-label-sm mt-1">Double shot espresso, velvety milk</p>
+</div>
+<!-- Pastry Card -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="bg-secondary-container rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02]">
+<img class="w-full h-56 object-cover" data-alt="A flaky, golden-brown artisanal croissant resting on a simple parchment paper inside a bright, sunlit bakery. The texture of the pastry is crisp and multi-layered, suggesting a freshly baked quality. The background is a clean, minimalist cafe interior with soft focus, maintaining the brand's sophisticated and welcoming aesthetic with warm neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkAe2FOqYjOw8tYZ-XE5XPaUuq_oZRyHQRyBBOIfu2HB1fD7JLndv3ZGIRThrJiFiVsKjq0hv0YfOdUSdnaUv1HC3opuhO9yjRMUNp1dKD7SUZPHyXSuBdnMuwke7QuGyySVy6RFvCy3pLQztRiY6r8zljJ-65EaMs2clWy91Xs4r-9vfnnza0YODuzTChqEuZsaP0dn4GDeJgv84WhyCEs9L_UR12AzSTxvJrPHHuqAwL2jn3lmPrdr67v8X_ofY0sBqVKuJpKqAj"/>
+</div>
+<div class="flex items-center">
+<span class="font-headline-md text-label-md text-primary">Butter Croissant</span>
+<div class="dotted-leader"></div>
+<span class="font-label-md text-label-md text-primary">$4.25</span>
+</div>
+<p class="text-on-surface-variant text-label-sm mt-1">Hand-rolled, 24-hour fermented</p>
+</div>
+<!-- Specialty Card -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="bg-secondary-container rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02]">
+<img class="w-full h-56 object-cover" data-alt="A minimalist pour-over coffee setup with a glass carafe and a ceramic dripper. The clear coffee liquid has a rich, amber hue, suggesting a light-roast specialty bean. The scene is set in a spacious, sun-lit environment with high-key lighting and a palette of warm woods and whites. The overall mood is focused, clean, and representative of modern coffee culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAczX-_ArbonuzISx-Xe1mjz4fxd3pffnUILkgkFdHCjOZQP-6DNi7__31F-S6BO9K2clOy4iv0LNtWeuW_eSsoGauONEYf1JZO_ovzoTaiDdPzEu5GSlZ1zo3_DFVGVTUW8fRsdEm8IwWNHQDZAPbJvdXHRtayJ5vTP16MGHhKr4aqEo4ottmQ-tqWqG-8kyQra7mlmYGhl8EL6OhFlOLoDyj4x9yOhA5JekqyWjZHSlBhiyIhenGI9Nn70cqTC8GKvUDxOWbvRtIi"/>
+</div>
+<div class="flex items-center">
+<span class="font-headline-md text-label-md text-primary">Ethiopian V60</span>
+<div class="dotted-leader"></div>
+<span class="font-label-md text-label-md text-primary">$6.00</span>
+</div>
+<p class="text-on-surface-variant text-label-sm mt-1">Notes of jasmine and citrus</p>
+</div>
+</div>
+</section>
+<!-- Special Offers (Bento Style) -->
+<section class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Weekly Specials</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 bg-tertiary-container rounded-xl p-8 flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<span class="bg-on-tertiary-container text-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm mb-4 inline-block">Member Only</span>
+<h3 class="font-headline-md text-on-tertiary-container mb-4">The Morning Ritual Bundle</h3>
+<p class="text-on-tertiary-container opacity-90 max-w-xs mb-8">Pair any specialty coffee with a pastry of your choice for a special price.</p>
+<button class="bg-on-tertiary-container text-tertiary px-6 py-2 rounded-full font-label-md hover:shadow-lg transition-all">Claim Offer</button>
+</div>
+<div class="absolute right-[-20px] bottom-[-20px] opacity-20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[180px]" data-icon="bakery_dining">bakery_dining</span>
+</div>
+</div>
+<div class="bg-primary-container rounded-xl p-8 flex flex-col items-center justify-center text-center group">
+<span class="material-symbols-outlined text-on-primary-container text-5xl mb-4" data-icon="redeem">redeem</span>
+<h3 class="font-headline-md text-on-primary-container mb-2">Gift Cards</h3>
+<p class="text-on-primary-container opacity-80 text-label-sm mb-6">Share the warmth of hospitality with friends.</p>
+<button class="text-on-primary-container font-label-md border-b border-on-primary-container hover:opacity-70">Purchase</button>
+</div>
+</div>
+</section>
+<!-- Menu Categories -->
+<section class="mb-12">
+<div class="flex flex-wrap gap-3">
+<span class="px-6 py-2 rounded-full border border-tertiary text-tertiary font-label-sm">Espresso Bar</span>
+<span class="px-6 py-2 rounded-full border border-tertiary text-tertiary font-label-sm">Slow Brew</span>
+<span class="px-6 py-2 rounded-full border border-tertiary text-tertiary font-label-sm">Seasonal</span>
+<span class="px-6 py-2 rounded-full border border-tertiary text-tertiary font-label-sm">Pastries</span>
+<span class="px-6 py-2 rounded-full border border-tertiary text-tertiary font-label-sm">Organic</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-low dark:bg-surface-container-low shadow-[0_-4px_12px_rgba(75,54,33,0.08)] z-50 rounded-t-xl">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-container text-on-secondary-container dark:text-on-secondary-container rounded-full px-4 py-1 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm mt-0.5">Home</span>
+</a>
+<!-- Menu -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container-high rounded-full transition-colors active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm mt-0.5">Menu</span>
+</a>
+<!-- Orders -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container-high rounded-full transition-colors active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-sm text-label-sm mt-0.5">Orders</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container-high rounded-full transition-colors active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm mt-0.5">Profile</span>
+</a>
+</nav>
+</body></html>

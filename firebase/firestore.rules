@@ -1,0 +1,10 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Demo rules — restrict before production (e.g. require auth).
+    match /cartItems/{itemId} {
+      allow read, write: if true;
+    }
+  }
+}

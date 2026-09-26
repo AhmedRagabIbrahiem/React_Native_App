@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "screens": {
+    "home": {
+      "path": "home_dashboard/code.html",
+      "title": "Home"
+    },
+    "menu": {
+      "path": "menu_browser/code.html",
+      "title": "Menu"
+    },
+    "reservation": {
+      "path": "table_reservation/code.html",
+      "title": "Reservations"
+    },
+    "checkout": {
+      "path": "order_checkout/code.html",
+      "title": "Checkout"
+    }
+  },
+  "actions": {
+    "menuAddToCart": {
+      "selectors": {
+        "gridAddButton": "[data-icon=\"add\"]",
+        "listAddButton": "[data-icon=\"add_circle\"]"
+      },
+      "api": "POST /api/cart/items"
+    }
+  },
+  "navigation": {
+    "bottomNav": ["home", "menu", "checkout", "reservation"],
+    "actions": {
+      "View Menu": "menu",
+      "Reserve a Table": "reservation",
+      "Explore All": "menu",
+      "Order Now": "checkout"
+    }
+  }
+}
